@@ -4,7 +4,7 @@ const rootElement = document.documentElement;
 
 const translations = {
   en: {
-    hero_badge: 'With a creativity of cats',
+    hero_badge: 'With love ❤️',
     hero_title: 'Qzxhysco',
     hero_copy: 'A cozy portfolio in a pixelized style, built for playful projects.',
     btn_primary: 'See My Works',
@@ -13,12 +13,12 @@ const translations = {
     works_header: 'Sprites',
     works_number: '01',
     gallery_number: '02',
-    gallery_header: 'Illustration',
+    gallery_header: 'Illustrations',
     footer_text: 'Made by smAglo360 with ❤️',
     gallery_close: 'Close'
   },
   ru: {
-    hero_badge: 'С творчеством кошек',
+    hero_badge: 'С любовью ❤️',
     hero_title: 'Qzxhysco',
     hero_copy: 'Уютное портфолио выполненное в пиксельном стиле для проектов.',
     btn_primary: 'Мои работы',
@@ -27,7 +27,7 @@ const translations = {
     works_header: 'Мелкоформатки',
     works_number: '01',
     gallery_number: '02',
-    gallery_header: 'Иллюстрация',
+    gallery_header: 'Иллюстрации',
     footer_text: 'Создано smAglo360 с любовью ❤️',
     gallery_close: 'Закрыть'
   }
