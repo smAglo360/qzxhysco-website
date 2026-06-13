@@ -605,35 +605,44 @@ body::before {
   }
 
   .hero-copy {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     max-width: 100%;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
   }
 
   .hero-badge,
   .section-number {
-    font-size: 0.65rem;
-    letter-spacing: 0.14em;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
     padding: 6px 12px;
     max-width: 100%;
   }
 
   .hero-badge {
-    font-size: 0.56rem;
+    font-size: 0.54rem;
     padding: 5px 10px;
     letter-spacing: 0.12em;
-    max-width: 210px;
+    max-width: 220px;
     white-space: normal;
     word-break: break-word;
   }
 
   .section-header h2 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 1.2;
   }
 
   .hero-right {
     margin: 18px 0 22px;
+  }
+
+  .hero-left {
+    padding-right: 0;
+  }
+
+  .cat-sprite {
+    width: min(100%, 220px);
+    height: 200px;
   }
 
   .hero-actions {
@@ -648,16 +657,32 @@ body::before {
   }
 
   .thumbnail-grid {
-    gap: 10px;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, 72px);
+    justify-content: center;
+  }
+
+  .thumbnail-card {
+    width: 72px;
   }
 
   .thumbnail-image {
-    width: 96px;
-    height: 96px;
+    width: 72px;
+    height: 72px;
   }
 
   .section {
     padding: 16px;
+  }
+
+  .section-header h2 {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+
+  .section-number {
+    font-size: 0.55rem;
+    letter-spacing: 0.12em;
   }
 
   .gallery-viewer {
@@ -701,7 +726,7 @@ body::before {
   }
 
   .viewer-image {
-    min-height: 44vh;
-    height: 44vh;
+    min-height: 42vh;
+    height: 42vh;
   }
 }
