@@ -363,34 +363,25 @@ body:before {
 }
 
 .viewer-footer {
-  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 18px;
   padding-top: 2.4rem;
   display: flex;
 }
 
-.viewer-text-block {
-  flex: 1;
-  min-width: 0;
-  margin-right: 0;
-}
-
-.viewer-text-block p {
-  margin-top: 12px;
-}
-
 .gallery-close {
-  margin-left: auto;
   padding: 14px 22px;
   transition: opacity .28s, transform .28s;
 }
 
-.viewer-body, .viewer-footer, .viewer-text-block, .gallery-nav, .gallery-close, .viewer-image {
+.viewer-body, .viewer-footer, .gallery-nav, .gallery-close, .viewer-image {
   transition: opacity .34s cubic-bezier(.22, 1, .36, 1), transform .34s cubic-bezier(.22, 1, .36, 1);
 }
 
-.gallery-viewer.viewer-anim-out .viewer-body, .gallery-viewer.viewer-anim-out .viewer-footer, .gallery-viewer.viewer-anim-out .viewer-text-block, .gallery-viewer.viewer-anim-out .gallery-nav, .gallery-viewer.viewer-anim-out .gallery-close, .gallery-viewer.viewer-anim-out .viewer-image {
+.gallery-viewer.viewer-anim-out .viewer-body, .gallery-viewer.viewer-anim-out .viewer-footer, .gallery-viewer.viewer-anim-out .gallery-nav, .gallery-viewer.viewer-anim-out .gallery-close, .gallery-viewer.viewer-anim-out .viewer-image {
   opacity: .6;
   transform: translateY(10px);
 }
@@ -399,7 +390,7 @@ body:before {
   opacity: 0;
 }
 
-.gallery-viewer.viewer-anim-in .viewer-body, .gallery-viewer.viewer-anim-in .viewer-footer, .gallery-viewer.viewer-anim-in .viewer-text-block, .gallery-viewer.viewer-anim-in .gallery-nav, .gallery-viewer.viewer-anim-in .gallery-close, .gallery-viewer.viewer-anim-in .viewer-image {
+.gallery-viewer.viewer-anim-in .viewer-body, .gallery-viewer.viewer-anim-in .viewer-footer, .gallery-viewer.viewer-anim-in .gallery-nav, .gallery-viewer.viewer-anim-in .gallery-close, .gallery-viewer.viewer-anim-in .viewer-image {
   opacity: 1;
   transform: translateY(0);
 }
@@ -666,11 +657,6 @@ body:before {
     display: flex;
   }
 
-  .viewer-text-block {
-    flex: 1;
-    min-width: 0;
-  }
-
   .gallery-close {
     margin-left: auto;
   }
@@ -709,14 +695,6 @@ body:before {
   .section-header h2 {
     font-size: 1.25rem;
     line-height: 1.2;
-  }
-
-  .gallery-card h3, .viewer-text-block h3 {
-    font-size: .95rem;
-  }
-
-  .gallery-card p, .gallery-note, .thumbnail-note, .viewer-text-block p, .page-footer p {
-    font-size: .78rem;
   }
 
   .hero-right {

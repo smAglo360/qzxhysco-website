@@ -383,31 +383,21 @@ body::before {
 
   .viewer-footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 12px;
+    justify-content: center;
+    gap: 18px;
     padding-top: 2.4rem;
+    text-align: center;
   }
 
-.viewer-text-block {
-  flex: 1;
-  min-width: 0;
-  margin-right: 0;
-}
-
-.viewer-text-block p {
-  margin-top: 12px;
-}
-
-.gallery-close {
-    margin-left: auto;
+  .gallery-close {
     padding: 14px 22px;
     transition: opacity 0.28s ease, transform 0.28s ease;
   }
 
   .viewer-body,
   .viewer-footer,
-  .viewer-text-block,
   .gallery-nav,
   .gallery-close,
   .viewer-image {
@@ -416,7 +406,6 @@ body::before {
 
   .gallery-viewer.viewer-anim-out .viewer-body,
   .gallery-viewer.viewer-anim-out .viewer-footer,
-  .gallery-viewer.viewer-anim-out .viewer-text-block,
   .gallery-viewer.viewer-anim-out .gallery-nav,
   .gallery-viewer.viewer-anim-out .gallery-close {
     opacity: 0.6;
@@ -434,7 +423,6 @@ body::before {
 
   .gallery-viewer.viewer-anim-in .viewer-body,
   .gallery-viewer.viewer-anim-in .viewer-footer,
-  .gallery-viewer.viewer-anim-in .viewer-text-block,
   .gallery-viewer.viewer-anim-in .gallery-nav,
   .gallery-viewer.viewer-anim-in .gallery-close,
   .gallery-viewer.viewer-anim-in .viewer-image {
@@ -717,11 +705,6 @@ body::before {
     flex-wrap: nowrap;
   }
 
-  .viewer-text-block {
-    flex: 1;
-    min-width: 0;
-  }
-
   .gallery-close {
     margin-left: auto;
   }
@@ -761,19 +744,6 @@ body::before {
   .section-header h2 {
     font-size: 1.25rem;
     line-height: 1.2;
-  }
-
-  .gallery-card h3,
-  .viewer-text-block h3 {
-    font-size: 0.95rem;
-  }
-
-  .gallery-card p,
-  .gallery-note,
-  .thumbnail-note,
-  .viewer-text-block p,
-  .page-footer p {
-    font-size: 0.78rem;
   }
 
   .hero-right {

@@ -230,6 +230,7 @@ const galleryViewer = document.getElementById('gallery-viewer');
 const galleryViewerImage = document.getElementById('gallery-viewer-image');
 const galleryViewerTitle = document.getElementById('gallery-viewer-title');
 const galleryViewerText = document.getElementById('gallery-viewer-text');
+const galleryViewerTextBlock = document.querySelector('.viewer-text-block');
 const galleryPrev = document.getElementById('gallery-prev');
 const galleryNext = document.getElementById('gallery-next');
 const galleryClose = document.getElementById('gallery-close');
@@ -238,12 +239,14 @@ function showGalleryViewer(index, items) {
   currentGalleryItems = items;
   currentGalleryIndex = (index + items.length) % items.length;
   const item = items[currentGalleryIndex];
+  const showTextBlock = items === workItems;
 
   const isSmallViewer = items === workItems;
   galleryViewer.classList.remove('viewer-anim-in');
   galleryViewer.classList.add('viewer-anim-out');
   galleryViewerImage.classList.remove('fade-in');
   galleryViewerImage.classList.add('fade-out');
+  galleryViewerTextBlock.style.display = showTextBlock ? '' : 'none';
 
   if (isSmallViewer) {
     galleryViewerImage.classList.add('viewer-image--small');
@@ -258,8 +261,6 @@ function showGalleryViewer(index, items) {
       galleryViewerImage.textContent = item.icon;
     }
 
-    galleryViewerTitle.textContent = translations[currentLanguage][item.titleKey];
-    galleryViewerText.textContent = translations[currentLanguage][item.textKey];
     galleryViewer.classList.remove('hidden');
     galleryViewer.classList.remove('viewer-anim-out');
     galleryViewer.classList.add('viewer-anim-in');
@@ -275,6 +276,10 @@ function showGalleryViewer(index, items) {
 }
 
 function updateGalleryViewerText() {
+  if (currentGalleryItems !== workItems) {
+    return;
+  }
+
   const item = currentGalleryItems[currentGalleryIndex];
   galleryViewerTitle.textContent = translations[currentLanguage][item.titleKey];
   galleryViewerText.textContent = translations[currentLanguage][item.textKey];
