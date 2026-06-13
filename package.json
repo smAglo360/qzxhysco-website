@@ -1,0 +1,12 @@
+{
+  "name": "pixel-cat-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --dist-dir dist"
+  },
+  "devDependencies": {
+    "parcel": "^2.10.0"
+  }
+}
