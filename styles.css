@@ -741,6 +741,15 @@ body::before {
     max-width: 100%;
   }
 
+  .hero-badge {
+    font-size: 0.56rem;
+    padding: 5px 10px;
+    letter-spacing: 0.12em;
+    max-width: 210px;
+    white-space: normal;
+    word-break: break-word;
+  }
+
   .section-header h2 {
     font-size: 1.25rem;
     line-height: 1.2;

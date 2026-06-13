@@ -13,48 +13,9 @@ const translations = {
     works_header: 'Featured Works',
     works_number: '01',
     gallery_number: '02',
-    project1_title: 'Kitten Code Jam',
-    project1_text: 'Retro UI design for a cat-themed game launch page with pixel charm.',
-    project1_tag: 'UI / Game',
-    project2_title: 'Purrfect Portfolio',
-    project2_text: 'Animated portfolio card system built to celebrate playful brand identity.',
-    project2_tag: 'Branding',
-    project3_title: 'Pixel Cat Studio',
-    project3_text: 'Landing page layout with bold pixel borders, bright colors, and fun micro-interactions.',
-    project3_tag: 'Web Design',
     gallery_header: 'Picture Gallery',
-    gallery1_title: 'Studio Snapshot',
-    gallery1_text: 'Placeholder for an image of pixel art or portfolio photography.',
-    gallery2_title: 'Project Preview',
-    gallery2_text: 'Swap this placeholder for your next gallery image.',
-    gallery3_title: 'Cat Moments',
-    gallery3_text: 'A section ready to show off your featured visuals.',
     footer_text: 'Made by smAglo360 with ❤️',
-    gallery_close: 'Close',
-    work1_title: 'Mini Preview 1',
-    work1_text: 'Small thumbnail detail for the first featured work.',
-    work2_title: 'Mini Preview 2',
-    work2_text: 'Small thumbnail detail for the second featured work.',
-    work3_title: 'Mini Preview 3',
-    work3_text: 'Small thumbnail detail for the third featured work.',
-    work4_title: 'Mini Preview 4',
-    work4_text: 'Small thumbnail detail for the fourth featured work.',
-    work5_title: 'Mini Preview 5',
-    work5_text: 'Small thumbnail detail for the fifth featured work.',
-    work6_title: 'Mini Preview 6',
-    work6_text: 'Small thumbnail detail for the sixth featured work.',
-    work7_title: 'Mini Preview 7',
-    work7_text: 'Small thumbnail detail for the seventh featured work.',
-    work8_title: 'Mini Preview 8',
-    work8_text: 'Small thumbnail detail for the eighth featured work.',
-    work9_title: 'Mini Preview 9',
-    work9_text: 'Small thumbnail detail for the ninth featured work.',
-    work10_title: 'Mini Preview 10',
-    work10_text: 'Small thumbnail detail for the tenth featured work.',
-    work11_title: 'Mini Preview 11',
-    work11_text: 'Small thumbnail detail for the eleventh featured work.',
-    work12_title: 'Mini Preview 12',
-    work12_text: 'Small thumbnail detail for the twelfth featured work.'
+    gallery_close: 'Close'
   },
   ru: {
     hero_badge: 'С творчеством кошек',
@@ -66,48 +27,9 @@ const translations = {
     works_header: 'Избранные работы',
     works_number: '01',
     gallery_number: '02',
-    project1_title: 'Kitten Code Jam',
-    project1_text: 'Ретро UI-дизайн для страницы запуска игры о кошках с пиксельным очарованием.',
-    project1_tag: 'UI / Игра',
-    project2_title: 'Purrfect Portfolio',
-    project2_text: 'Анимированная карта портфолио для демонстрации игривой айдентики.',
-    project2_tag: 'Брендинг',
-    project3_title: 'Pixel Cat Studio',
-    project3_text: 'Макет лендинга с жирными пиксельными рамками, яркими цветами и веселой микровзаимодействием.',
-    project3_tag: 'Веб-дизайн',
     gallery_header: 'Галерея изображений',
-    gallery1_title: 'Кадр студии',
-    gallery1_text: 'Здесь появится изображение пиксельного искусства или фотографии.',
-    gallery2_title: 'Превью проекта',
-    gallery2_text: 'Замените этот блок на ваше следующее изображение галереи.',
-    gallery3_title: 'Кошачьи моменты',
-    gallery3_text: 'Раздел готов показать ваши лучшие визуальные работы.',
     footer_text: 'Создано smAglo360 с любовью ❤️',
-    gallery_close: 'Закрыть',
-    work1_title: 'Мини-превью 1',
-    work1_text: 'Маленький миниатюрный просмотр первой работы.',
-    work2_title: 'Мини-превью 2',
-    work2_text: 'Маленький миниатюрный просмотр второй работы.',
-    work3_title: 'Мини-превью 3',
-    work3_text: 'Маленький миниатюрный просмотр третьей работы.',
-    work4_title: 'Мини-превью 4',
-    work4_text: 'Маленький миниатюрный просмотр четвертой работы.',
-    work5_title: 'Мини-превью 5',
-    work5_text: 'Маленький миниатюрный просмотр пятой работы.',
-    work6_title: 'Мини-превью 6',
-    work6_text: 'Маленький миниатюрный просмотр шестой работы.',
-    work7_title: 'Мини-превью 7',
-    work7_text: 'Маленький миниатюрный просмотр седьмой работы.',
-    work8_title: 'Мини-превью 8',
-    work8_text: 'Маленький миниатюрный просмотр восьмой работы.',
-    work9_title: 'Мини-превью 9',
-    work9_text: 'Маленький миниатюрный просмотр девятой работы.',
-    work10_title: 'Мини-превью 10',
-    work10_text: 'Маленький миниатюрный просмотр десятой работы.',
-    work11_title: 'Мини-превью 11',
-    work11_text: 'Маленький миниатюрный просмотр одиннадцатой работы.',
-    work12_title: 'Мини-превью 12',
-    work12_text: 'Маленький миниатюрный просмотр двенадцатой работы.'
+    gallery_close: 'Закрыть'
   }
 };
 
@@ -124,84 +46,24 @@ function updateTheme() {
 }
 
 const galleryItems = [
-  {
-    srcFull: 'assets/fullpictures/Picture 1.png',
-    titleKey: 'gallery1_title',
-    textKey: 'gallery1_text'
-  },
-  {
-    srcFull: 'assets/fullpictures/Picture 2.png',
-    titleKey: 'gallery2_title',
-    textKey: 'gallery2_text'
-  },
-  {
-    srcFull: 'assets/fullpictures/Picture 3.png',
-    titleKey: 'gallery3_title',
-    textKey: 'gallery3_text'
-  }
+  { srcFull: 'assets/fullpictures/Picture 1.png' },
+  { srcFull: 'assets/fullpictures/Picture 2.png' },
+  { srcFull: 'assets/fullpictures/Picture 3.png' }
 ];
 
 const workItems = [
-  {
-    srcFull: 'assets/pictures/Picture 1.png',
-    titleKey: 'work1_title',
-    textKey: 'work1_text'
-  },
-  {
-    srcFull: 'assets/pictures/Picture 2.png',
-    titleKey: 'work2_title',
-    textKey: 'work2_text'
-  },
-  {
-    srcFull: 'assets/pictures/Picture 3.png',
-    titleKey: 'work3_title',
-    textKey: 'work3_text'
-  },
-  {
-    srcFull: 'assets/pictures/Picture 4.png',
-    titleKey: 'work4_title',
-    textKey: 'work4_text'
-  },
-  {
-    srcFull: 'assets/pictures/Picture 5.png',
-    titleKey: 'work5_title',
-    textKey: 'work5_text'
-  },
-  {
-    srcFull: 'assets/pictures/Picture 6.png',
-    titleKey: 'work6_title',
-    textKey: 'work6_text'
-  },
-  {
-    srcFull: 'assets/pictures/Picture 7.png',
-    titleKey: 'work7_title',
-    textKey: 'work7_text'
-  },
-  {
-    srcFull: 'assets/pictures/Picture 8.png',
-    titleKey: 'work8_title',
-    textKey: 'work8_text'
-  },
-  {
-    srcFull: 'assets/pictures/Picture 9.png',
-    titleKey: 'work9_title',
-    textKey: 'work9_text'
-  },
-  {
-    srcFull: 'assets/pictures/Picture 10.png',
-    titleKey: 'work10_title',
-    textKey: 'work10_text'
-  },
-  {
-    srcFull: 'assets/pictures/Picture 11.png',
-    titleKey: 'work11_title',
-    textKey: 'work11_text'
-  },
-  {
-    srcFull: 'assets/pictures/Picture 12.png',
-    titleKey: 'work12_title',
-    textKey: 'work12_text'
-  }
+  { srcFull: 'assets/pictures/Picture 1.png' },
+  { srcFull: 'assets/pictures/Picture 2.png' },
+  { srcFull: 'assets/pictures/Picture 3.png' },
+  { srcFull: 'assets/pictures/Picture 4.png' },
+  { srcFull: 'assets/pictures/Picture 5.png' },
+  { srcFull: 'assets/pictures/Picture 6.png' },
+  { srcFull: 'assets/pictures/Picture 7.png' },
+  { srcFull: 'assets/pictures/Picture 8.png' },
+  { srcFull: 'assets/pictures/Picture 9.png' },
+  { srcFull: 'assets/pictures/Picture 10.png' },
+  { srcFull: 'assets/pictures/Picture 11.png' },
+  { srcFull: 'assets/pictures/Picture 12.png' }
 ];
 
 function resolveWorkItemSources() {
@@ -228,9 +90,6 @@ let currentGalleryIndex = 0;
 let currentGalleryItems = galleryItems;
 const galleryViewer = document.getElementById('gallery-viewer');
 const galleryViewerImage = document.getElementById('gallery-viewer-image');
-const galleryViewerTitle = document.getElementById('gallery-viewer-title');
-const galleryViewerText = document.getElementById('gallery-viewer-text');
-const galleryViewerTextBlock = document.querySelector('.viewer-text-block');
 const galleryPrev = document.getElementById('gallery-prev');
 const galleryNext = document.getElementById('gallery-next');
 const galleryClose = document.getElementById('gallery-close');
@@ -239,14 +98,12 @@ function showGalleryViewer(index, items) {
   currentGalleryItems = items;
   currentGalleryIndex = (index + items.length) % items.length;
   const item = items[currentGalleryIndex];
-  const showTextBlock = items === workItems;
-
   const isSmallViewer = items === workItems;
+
   galleryViewer.classList.remove('viewer-anim-in');
   galleryViewer.classList.add('viewer-anim-out');
   galleryViewerImage.classList.remove('fade-in');
   galleryViewerImage.classList.add('fade-out');
-  galleryViewerTextBlock.style.display = showTextBlock ? '' : 'none';
 
   if (isSmallViewer) {
     galleryViewerImage.classList.add('viewer-image--small');
@@ -256,7 +113,7 @@ function showGalleryViewer(index, items) {
 
   setTimeout(() => {
     if (item.srcFull) {
-      galleryViewerImage.innerHTML = `<img src="${item.srcFull}" alt="${translations[currentLanguage][item.titleKey] || 'Gallery image'}">`;
+      galleryViewerImage.innerHTML = `<img src="${item.srcFull}" alt="Gallery image">`;
     } else {
       galleryViewerImage.textContent = item.icon;
     }
@@ -273,16 +130,6 @@ function showGalleryViewer(index, items) {
       galleryViewer.classList.remove('viewer-anim-in');
     }, 320);
   }, 180);
-}
-
-function updateGalleryViewerText() {
-  if (currentGalleryItems !== workItems) {
-    return;
-  }
-
-  const item = currentGalleryItems[currentGalleryIndex];
-  galleryViewerTitle.textContent = translations[currentLanguage][item.titleKey];
-  galleryViewerText.textContent = translations[currentLanguage][item.textKey];
 }
 
 function changeGalleryIndex(delta) {
@@ -314,9 +161,6 @@ function setLanguage(lang) {
   }
   updateThemeToggleText();
   galleryClose.textContent = translations[currentLanguage].gallery_close;
-  if (!galleryViewer.classList.contains('hidden')) {
-    updateGalleryViewerText();
-  }
 }
 
 themeToggle.addEventListener('click', updateTheme);
