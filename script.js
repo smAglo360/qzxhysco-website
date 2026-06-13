@@ -10,10 +10,10 @@ const translations = {
     btn_primary: 'See My Works',
     btn_secondary: 'Dark Mood',
     btn_secondary_sunny: 'Sunny Mood',
-    works_header: 'Featured Works',
+    works_header: 'Sprites',
     works_number: '01',
     gallery_number: '02',
-    gallery_header: 'Picture Gallery',
+    gallery_header: 'Illustration',
     footer_text: 'Made by smAglo360 with ❤️',
     gallery_close: 'Close'
   },
@@ -24,10 +24,10 @@ const translations = {
     btn_primary: 'Мои работы',
     btn_secondary: 'Темный',
     btn_secondary_sunny: 'Солнечный',
-    works_header: 'Избранные работы',
+    works_header: 'Мелкоформатки',
     works_number: '01',
     gallery_number: '02',
-    gallery_header: 'Галерея изображений',
+    gallery_header: 'Иллюстрация',
     footer_text: 'Создано smAglo360 с любовью ❤️',
     gallery_close: 'Закрыть'
   }
@@ -192,7 +192,7 @@ window.addEventListener('load', () => {
   setLanguage(currentLanguage);
 
   const appearItems = document.querySelectorAll(
-    '.hero-card, .hero-actions, .section-header, .thumbnail-card, .gallery-card, .project-card, .feature-box, .page-footer'
+    '.hero-card, .hero-actions, .section-header, .thumbnail-card, .gallery-card, .page-footer'
   );
   appearItems.forEach((item) => item.classList.add('appear-block'));
 
